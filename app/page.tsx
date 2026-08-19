@@ -2,6 +2,18 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RevealObserver from "@/components/RevealObserver";
+import CommerceArchitecture from "@/components/CommerceArchitecture";
+
+const homeCommerceFlow = [
+  { num: "01", title: "Shopify", detail: "Storefront & product catalogue" },
+  { num: "02", title: "Product catalogue", detail: "Structured, synced feed" },
+  { num: "03", title: "Meta Commerce", detail: "Catalogue connected to Meta" },
+  { num: "04", title: "Instagram / Facebook", detail: "Shop & product tagging" },
+  { num: "05", title: "Meta Ads", detail: "Catalogue & retargeting campaigns" },
+  { num: "06", title: "Pixel + CAPI", detail: "Browser & server-side tracking" },
+  { num: "07", title: "Conversion", detail: "Checkout event captured" },
+  { num: "08", title: "Reporting", detail: "Performance becomes measurable" },
+];
 
 export default function Home() {
   return (
@@ -176,6 +188,46 @@ export default function Home() {
             <div className="row"><span>Reporting cadence</span><span>Monthly, against contract</span></div>
             <div className="row"><span>Missed target remedy</span><span>Written into engagement</span></div>
             <div className="row"><span>Reporting basis</span><span>Leads, not impressions</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ecommerce">
+        <div className="wrap reveal">
+          <div className="section-label">Ecommerce &amp; social commerce</div>
+          <h2>Commerce shouldn&apos;t stop at checkout.</h2>
+          <p className="section-intro">
+            We connect your storefront, product catalogue, social channels, creative and paid acquisition into
+            one measurable commerce system.
+          </p>
+
+          <div className="service-grid cols-4">
+            <div className="service-card">
+              <div className="num">01</div>
+              <h4>Shopify</h4>
+              <p>Storefronts, product architecture and merchandising built for conversion.</p>
+            </div>
+            <div className="service-card">
+              <div className="num">02</div>
+              <h4>Meta</h4>
+              <p>Commerce Manager, Facebook Shop and Instagram Shopping, synced to your catalogue.</p>
+            </div>
+            <div className="service-card">
+              <div className="num">03</div>
+              <h4>Creative</h4>
+              <p>Reusable branded templates for product launches and social shopping.</p>
+            </div>
+            <div className="service-card">
+              <div className="num">04</div>
+              <h4>Tracking</h4>
+              <p>Pixel and Conversions API, configured and deduplicated properly.</p>
+            </div>
+          </div>
+
+          <CommerceArchitecture steps={homeCommerceFlow} compact />
+
+          <div className="hero-ctas" style={{ marginTop: 44 }}>
+            <Link href="/ecommerce" className="btn-primary">Explore Ecommerce →</Link>
           </div>
         </div>
       </section>
