@@ -106,6 +106,53 @@ export default function Services() {
         </div>
       </section>
 
+      <section id="ecommerce" style={{ background: "var(--paper-raise)" }}>
+        <div className="wrap reveal">
+          <div className="section-label">Also available</div>
+          <h2>Ecommerce &amp; Social Commerce</h2>
+          <p className="section-intro">
+            Shopify, Meta Commerce and conversion systems for physical-product brands.
+          </p>
+
+          <div className="service-grid">
+            <div className="service-card">
+              <div className="num">01</div>
+              <h4>Shopify Commerce</h4>
+              <p>Storefronts, product architecture and merchandising.</p>
+            </div>
+            <div className="service-card">
+              <div className="num">02</div>
+              <h4>Meta Commerce</h4>
+              <p>Commerce Manager, Facebook Shop and Instagram Shopping, synced to your catalogue.</p>
+            </div>
+            <div className="service-card">
+              <div className="num">03</div>
+              <h4>Tracking</h4>
+              <p>Pixel and Conversions API, configured and deduplicated.</p>
+            </div>
+            <div className="service-card">
+              <div className="num">04</div>
+              <h4>Paid Social</h4>
+              <p>Catalogue campaigns, prospecting, retargeting and product launches.</p>
+            </div>
+            <div className="service-card">
+              <div className="num">05</div>
+              <h4>Social Creative</h4>
+              <p>Reusable branded templates for Instagram and Facebook.</p>
+            </div>
+            <div className="service-card">
+              <div className="num">06</div>
+              <h4>Training &amp; Handover</h4>
+              <p>Documentation and walkthroughs so your team can run it.</p>
+            </div>
+          </div>
+
+          <div className="hero-ctas" style={{ marginTop: 44 }}>
+            <Link href="/ecommerce" className="btn-primary">Explore Ecommerce →</Link>
+          </div>
+        </div>
+      </section>
+
       <section className="cta-band">
         <div className="wrap reveal">
           <div className="section-label" style={{ textAlign: "center" }}>Next step</div>

@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RevealObserver from "@/components/RevealObserver";
+import CommerceCaseStudyCard from "@/components/CommerceCaseStudyCard";
 import Link from "next/link";
 
 export const metadata = { title: "Case Studies — Visuioration" };
@@ -151,6 +152,56 @@ export default function CaseStudies() {
                 <div className="cpl">{c.cpl[0]} <b>{c.cpl[1]}</b></div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="commerce-work" style={{ background: "var(--paper-raise)" }}>
+        <div className="wrap reveal">
+          <div className="section-label">Commerce work</div>
+          <h2>Selected independent ecommerce implementations.</h2>
+          <p className="section-intro">
+            Selected independent ecommerce implementations exploring Shopify, Meta Commerce, social shopping and
+            conversion systems.
+          </p>
+
+          <div className="commerce-grid">
+            <CommerceCaseStudyCard
+              href="/case-studies/atelier-casa"
+              label="Independent Portfolio Project"
+              title="Atelier Casa"
+              sub="Premium Home Commerce"
+              description="A premium homeware commerce system connecting product merchandising, social discovery and paid acquisition."
+              tags={["Shopify", "Meta Commerce", "Social Commerce", "Ecommerce UX"]}
+              mark="ATELIER CASA"
+            />
+            <CommerceCaseStudyCard
+              href="/case-studies/noire-skin"
+              label="Independent Portfolio Project"
+              title="Noiré Skin"
+              sub="DTC Beauty Commerce"
+              description="A conversion-focused beauty commerce system connecting product education, social creative, catalogue advertising and retargeting."
+              tags={["Shopify", "Meta Ads", "CAPI", "Creative"]}
+              mark="NOIRÉ SKIN"
+            />
+            <CommerceCaseStudyCard
+              href="/case-studies/archive-01"
+              label="Independent Portfolio Project"
+              title="Archive / 01"
+              sub="Instagram-First Commerce"
+              description="An Instagram-first commerce experience designed around discovery, product storytelling and a seamless transition into Shopify."
+              tags={["Instagram", "Shopify", "Social Commerce", "UX"]}
+              mark="ARCHIVE / 01"
+            />
+            <CommerceCaseStudyCard
+              href="/case-studies/omni-commerce"
+              label="Implementation Study"
+              title="Omni / Commerce OS"
+              sub="Omnichannel Commerce Architecture"
+              description="A technical commerce architecture connecting catalogue, inventory, social commerce, advertising and conversion tracking."
+              tags={["Shopify", "Meta", "Omnichannel", "CAPI"]}
+              mark="OMNI / OS"
+            />
           </div>
         </div>
       </section>

@@ -5,7 +5,7 @@ export default function Footer() {
     <footer>
       <div className="wrap">
         <div className="f-left">
-          VISUIORATION — Performance marketing for construction, contracted to outcomes.
+          VISUIORATION — Performance, ecommerce and growth systems built around measurable outcomes.
           <br />
           contact@visuioration.com
         </div>
